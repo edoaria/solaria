@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOLARIA ROLEPLAY - Official Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Orbitron:wght@600;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-[#f8fafc] text-slate-800 font-sans min-h-screen">
+
+    <!-- Header Navigation -->
+    <header class="bg-white/90 backdrop-blur-md sticky top-0 z-50 border-b border-slate-100 shadow-sm">
+        <div class="max-w-7xl mx-auto px-6 py-3 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <img src="assets/img/logo.png" alt="Solaria Logo" class="w-10 h-10 rounded-xl object-cover shadow-sm">
+                <div>
+                    <h1 class="text-xl font-extrabold tracking-wider text-slate-900 font-['Orbitron'] leading-none">SOLARIA</h1>
+                    <p class="text-[10px] text-sky-500 font-bold tracking-widest">ROLEPLAY</p>
+                </div>
+            </div>
+
+            <!-- Multi-Page Nav Links -->
+            <nav class="hidden lg:flex items-center gap-2 text-xs font-semibold text-slate-600">
+                <a href="index.html" class="flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-sky-50 text-sky-500 font-bold">
+                    <i class="fa-solid fa-house"></i> Home
+                </a>
+                <a href="harga.html" class="flex items-center gap-1.5 px-3.5 py-2 rounded-xl hover:bg-slate-100 transition-colors">
+                    <i class="fa-solid fa-tag"></i> Cek Harga
+                </a>
+                <a href="pendaftaran.html" class="flex items-center gap-1.5 px-3.5 py-2 rounded-xl hover:bg-slate-100 transition-colors">
+                    <i class="fa-solid fa-id-card"></i> Whitelist & Badside
+                </a>
+                <a href="update.html" class="flex items-center gap-1.5 px-3.5 py-2 rounded-xl hover:bg-slate-100 transition-colors">
+                    <i class="fa-solid fa-bullhorn"></i> Info Update
+                </a>
+                <a href="chat.html" class="flex items-center gap-1.5 px-3.5 py-2 rounded-xl hover:bg-slate-100 transition-colors relative">
+                    <i class="fa-solid fa-comments"></i> Chat Player
+                    <span class="w-2 h-2 rounded-full bg-emerald-500 absolute -top-0.5 -right-0.5"></span>
+                </a>
+            </nav>
+
+            <div class="flex items-center gap-3">
+                <button id="dev-toggle-btn" onclick="toggleDevModal()" class="text-xs font-bold text-slate-500 hover:text-sky-500 px-3 py-2 rounded-xl border border-slate-200 hover:border-sky-300 transition-all">
+                    <i class="fa-solid fa-shield-halved"></i> <span id="dev-btn-text">Dev Mode</span>
+                </button>
+                <a href="https://cfx.re/join/j44ele4" target="_blank" class="flex items-center gap-2 bg-[#00a6ff] hover:bg-[#0092e0] text-white text-xs font-extrabold px-5 py-2.5 rounded-2xl shadow-md shadow-sky-400/30 transition-all hover:scale-105">
+                    <i class="fa-solid fa-gamepad"></i> Connect Server
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <main class="max-w-7xl mx-auto px-6 py-8">
+        <!-- Hero Section -->
+        <section class="relative bg-gradient-to-br from-[#e0f2fe] via-[#f0f9ff] to-white rounded-3xl p-8 lg:p-12 border border-sky-100 shadow-xl overflow-hidden hover-wobble">
+            <div class="grid lg:grid-cols-12 gap-8 items-center">
+                
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/80 border border-sky-200 text-sky-600 text-xs font-bold shadow-sm">
+                        FiveM Server Indonesia • Active Community
+                    </div>
+
+                    <div class="space-y-1">
+                        <h2 class="text-4xl lg:text-5xl font-black tracking-tight text-slate-900 font-['Orbitron']">
+                            WELCOME TO
+                        </h2>
+                        <h2 class="text-4xl lg:text-5xl font-black tracking-tight text-[#00a6ff] font-['Orbitron']">
+                            SOLARIA
+                        </h2>
+                        <h2 class="text-4xl lg:text-5xl font-black tracking-tight text-[#00a6ff] font-['Orbitron']">
+                            ROLEPLAY
+                        </h2>
+                    </div>
+
+                    <p class="text-slate-600 text-base font-medium italic">
+                        "Server ringan dengan fitur yang simple"
+                    </p>
+
+                    <div class="flex items-center gap-2 text-xs font-bold text-slate-400 tracking-wider">
+                        <span>POWERED BY</span>
+                        <img src="assets/img/primofivebg.png" alt="Primo Five" class="h-6 object-contain">
+                    </div>
+
+                    <div class="flex flex-wrap items-center gap-4 pt-2">
+                        <a href="https://cfx.re/join/j44ele4" target="_blank" class="flex items-center gap-2 bg-[#00a6ff] hover:bg-[#008bd6] text-white font-extrabold px-6 py-3.5 rounded-2xl shadow-lg shadow-sky-400/40 hover:scale-105 transition-all text-sm">
+                            <i class="fa-solid fa-play"></i> LANGSUNG MAIN (CONNECT)
+                        </a>
+                        <a href="pendaftaran.html" class="flex items-center gap-2 bg-white hover:bg-slate-50 text-slate-700 font-bold px-6 py-3.5 rounded-2xl border border-slate-200 shadow-sm transition-all text-sm">
+                            <i class="fa-solid fa-user-plus"></i> Daftar Whitelist
+                        </a>
+                    </div>
+
+                    <div class="flex items-center gap-4 pt-4 border-t border-sky-200/50">
+                        <span class="text-xs font-bold text-slate-400 tracking-wider">SOCIAL MEDIA:</span>
+                        <div class="flex items-center gap-3">
+                            <a href="https://www.instagram.com/arnopee6" target="_blank" class="w-9 h-9 rounded-xl bg-gradient-to-tr from-amber-500 via-rose-500 to-purple-600 text-white flex items-center justify-center shadow-md hover:scale-110 transition-transform">
+                                <i class="fa-brands fa-instagram text-lg"></i>
+                            </a>
+                            <a href="https://www.tiktok.com/@cutzzdnorta" target="_blank" class="w-9 h-9 rounded-xl bg-black text-white flex items-center justify-center shadow-md hover:scale-110 transition-transform">
+                                <i class="fa-brands fa-tiktok text-lg"></i>
+                            </a>
+                            <a href="https://www.youtube.com/@CutzzDNoel" target="_blank" class="w-9 h-9 rounded-xl bg-red-600 text-white flex items-center justify-center shadow-md hover:scale-110 transition-transform">
+                                <i class="fa-brands fa-youtube text-lg"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Founder Card -->
+                <div class="lg:col-span-5 flex justify-center">
+                    <div class="bg-white rounded-3xl p-6 shadow-xl border border-slate-100 max-w-sm w-full text-center space-y-4 hover-wobble">
+                        <div class="relative w-full aspect-square rounded-2xl overflow-hidden bg-slate-100 border border-slate-200 flex items-center justify-center">
+                            <img src="assets/img/founder.png" alt="Founder Solaria Server" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-sky-50 text-[#00a6ff] text-[11px] font-extrabold tracking-wide border border-sky-100">
+                                <i class="fa-solid fa-crown text-amber-400"></i> FOUNDER SERVER
+                            </span>
+                            <h3 class="text-2xl font-black text-slate-900 mt-2 font-['Orbitron']">PRIMOFIVE</h3>
+                            <p class="text-xs text-slate-400 font-medium">Lead Developer & Server Owner</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Dev Mode Modal -->
+    <div id="dev-modal" class="fixed inset-0 bg-slate-900/40 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-white border border-slate-200 p-6 rounded-3xl max-w-sm w-full space-y-4 shadow-2xl">
+            <div class="flex justify-between items-center">
+                <h4 class="font-bold text-slate-900 flex items-center gap-2"><i class="fa-solid fa-lock text-[#00a6ff]"></i> Login Dev Mode</h4>
+                <button onclick="toggleDevModal()" class="text-slate-400 hover:text-slate-600"><i class="fa-solid fa-xmark text-lg"></i></button>
+            </div>
+            <p class="text-xs text-slate-500">Masukkan Password Developer untuk mengakses menu kontrol.</p>
+            <input type="password" id="dev-password-input" placeholder="Password Developer..." class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:border-[#00a6ff]">
+            <button onclick="verifyDevPassword()" class="w-full bg-[#00a6ff] text-white font-extrabold py-2.5 rounded-xl text-sm">Verifikasi</button>
+        </div>
+    </div>
+
+    <footer class="border-t border-slate-200 bg-white py-6 mt-16 text-center text-xs text-slate-400">
+        <p>&copy; 2026 Solaria Roleplay. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

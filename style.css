@@ -1,0 +1,17 @@
+@keyframes wobbleFloat {
+    0%, 100% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-4px) rotate(0.4deg);
+    }
+}
+
+.hover-wobble {
+    transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-wobble:hover {
+    animation: wobbleFloat 2.5s ease-in-out infinite;
+    box-shadow: 0 12px 30px -5px rgba(0, 166, 255, 0.15);
+}

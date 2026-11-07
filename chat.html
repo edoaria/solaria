@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Player - SOLARIA ROLEPLAY</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Orbitron:wght@600;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-[#f8fafc] text-slate-800 font-sans min-h-screen">
+
+    <header class="bg-white/90 backdrop-blur-md sticky top-0 z-50 border-b border-slate-100 shadow-sm">
+        <div class="max-w-7xl mx-auto px-6 py-3 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <img src="assets/img/logo.png" alt="Solaria Logo" class="w-10 h-10 rounded-xl object-cover shadow-sm">
+                <div>
+                    <h1 class="text-xl font-extrabold tracking-wider text-slate-900 font-['Orbitron'] leading-none">SOLARIA</h1>
+                    <p class="text-[10px] text-sky-500 font-bold tracking-widest">ROLEPLAY</p>
+                </div>
+            </div>
+
+            <nav class="hidden lg:flex items-center gap-2 text-xs font-semibold text-slate-600">
+                <a href="index.html" class="flex items-center gap-1.5 px-3.5 py-2 rounded-xl hover:bg-slate-100 transition-colors">
+                    <i class="fa-solid fa-house"></i> Home
+                </a>
+                <a href="harga.html" class="flex items-center gap-1.5 px-3.5 py-2 rounded-xl hover:bg-slate-100 transition-colors">
+                    <i class="fa-solid fa-tag"></i> Cek Harga
+                </a>
+                <a href="pendaftaran.html" class="flex items-center gap-1.5 px-3.5 py-2 rounded-xl hover:bg-slate-100 transition-colors">
+                    <i class="fa-solid fa-id-card"></i> Whitelist & Badside
+                </a>
+                <a href="update.html" class="flex items-center gap-1.5 px-3.5 py-2 rounded-xl hover:bg-slate-100 transition-colors">
+                    <i class="fa-solid fa-bullhorn"></i> Info Update
+                </a>
+                <a href="chat.html" class="flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-sky-50 text-sky-500 font-bold relative">
+                    <i class="fa-solid fa-comments"></i> Chat Player
+                    <span class="w-2 h-2 rounded-full bg-emerald-500 absolute -top-0.5 -right-0.5"></span>
+                </a>
+            </nav>
+
+            <div class="flex items-center gap-3">
+                <a href="https://cfx.re/join/j44ele4" target="_blank" class="flex items-center gap-2 bg-[#00a6ff] hover:bg-[#0092e0] text-white text-xs font-extrabold px-5 py-2.5 rounded-2xl shadow-md shadow-sky-400/30 transition-all hover:scale-105">
+                    <i class="fa-solid fa-gamepad"></i> Connect Server
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-6 py-10 space-y-8">
+        <div class="border-b border-slate-200 pb-5">
+            <h2 class="text-3xl font-black text-slate-900 font-['Orbitron'] flex items-center gap-3">
+                <i class="fa-solid fa-comments text-[#00a6ff]"></i> Player Live Chat
+            </h2>
+            <p class="text-slate-500 text-sm mt-1">Ruang obrolan santai antar player Solaria Roleplay</p>
+        </div>
+
+        <div class="bg-white border border-slate-200 rounded-3xl p-6 h-[480px] flex flex-col shadow-sm hover-wobble">
+            <div id="chat-box" class="flex-1 overflow-y-auto space-y-4 pr-3">
+                <div class="bg-slate-50 border border-slate-200/80 p-4 rounded-2xl text-sm space-y-1">
+                    <span class="font-bold text-[#00a6ff]">System Bot</span>
+                    <p class="text-slate-600">Selamat datang di live chat Solaria Roleplay! Jaga ketertiban obrolan.</p>
+                </div>
+            </div>
+            <form onsubmit="handleSendChat(event)" class="mt-4 flex gap-3">
+                <input type="text" id="chat-sender" required placeholder="Nama IC..." class="w-1/3 bg-slate-50 border border-slate-200 rounded-2xl px-4 py-3 text-sm focus:outline-none focus:border-[#00a6ff]">
+                <input type="text" id="chat-message" required placeholder="Tulis pesan..." class="flex-1 bg-slate-50 border border-slate-200 rounded-2xl px-4 py-3 text-sm focus:outline-none focus:border-[#00a6ff]">
+                <button type="submit" class="bg-[#00a6ff] hover:bg-[#0082c9] text-white px-6 py-3 rounded-2xl text-sm font-extrabold transition-all">Kirim</button>
+            </form>
+        </div>
+    </main>
+
+    <footer class="border-t border-slate-200 bg-white py-6 mt-16 text-center text-xs text-slate-400">
+        <p>&copy; 2026 Solaria Roleplay. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

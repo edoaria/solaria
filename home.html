@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOLARIA ROLEPLAY - Official Website</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Inter & Orbitron -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Orbitron:wght@600;800;900&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-[#f8fafc] text-slate-800 font-sans min-h-screen">
+
+    <!-- Header Navigation -->
+    <header class="bg-white/90 backdrop-blur-md sticky top-0 z-50 border-b border-slate-100 shadow-sm">
+        <div class="max-w-7xl mx-auto px-6 py-3 flex justify-between items-center">
+            <!-- Brand Logo -->
+            <div class="flex items-center gap-3">
+                <img src="assets/img/logo.png" alt="Solaria Logo" class="w-10 h-10 rounded-xl object-cover shadow-sm">
+                <div>
+                    <h1 class="text-xl font-extrabold tracking-wider text-slate-900 font-['Orbitron'] leading-none">SOLARIA</h1>
+                    <p class="text-[10px] text-sky-500 font-bold tracking-widest">ROLEPLAY</p>
+                </div>
+            </div>
+
+            <!-- Multi-Page Nav Links -->
+            <nav class="hidden lg:flex items-center gap-2 text-xs font-semibold text-slate-600">
+                <a href="index.html" class="flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-sky-50 text-sky-500 font-bold">
+                    <i class="fa-solid fa-house"></i> Home
+                </a>
+                <a href="harga.html" class="flex items-center gap-1.5 px-3.5 py-2 rounded-xl hover:bg-slate-100 transition-colors">
+                    <i class="fa-solid fa-tag"></i> Cek Harga
+                </a>
+                <a href="pendaftaran.html" class="flex items-center gap-1.5 px-3.5 py-2 rounded-xl hover:bg-slate-100 transition-colors">
+                    <i class="fa-solid fa-id-card"></i> Whitelist & Badside
+                </a>
+                <a href="update.html" class="flex items-center gap-1.5 px-3.5 py-2 rounded-xl hover:bg-slate-100 transition-colors">
+                    <i class="fa-solid fa-bullhorn"></i> Info Update
+                </a>
+                <a href="chat.html" class="flex items-center gap-1.5 px-3.5 py-2 rounded-xl hover:bg-slate-100 transition-colors relative">
+                    <i class="fa-solid fa-comments"></i> Chat Player
+                    <span class="w-2 h-2 rounded-full bg-emerald-500 absolute -top-0.5 -right-0.5"></span>
+                </a>
+            </nav>
+
+            <!-- Dev Mode & Connect Server Button -->
+            <div class="flex items-center gap-3">
+                <button id="dev-toggle-btn" onclick="toggleDevModal()" class="text-xs font-bold text-slate-500 hover:text-sky-500 px-3 py-2 rounded-xl border border-slate-200 hover:border-sky-300 transition-all">
+                    <i class="fa-solid fa-shield-halved"></i> <span id="dev-btn-text">Dev Mode</span>
+                </button>
+                <a href="https://cfx.re/join/j44ele4" target="_blank" class="flex items-center gap-2 bg-[#00a6ff] hover:bg-[#0092e0] text-white text-xs font-extrabold px-5 py-2.5 rounded-2xl shadow-md shadow-sky-400/30 transition-all hover:scale-105">
+                    <i class="fa-solid fa-gamepad"></i> Connect Server
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="max-w-7xl mx-auto px-6 py-8">
+        <!-- Hero Section -->
+        <section class="relative bg-gradient-to-br from-[#e0f2fe] via-[#f0f9ff] to-white rounded-3xl p-8 lg:p-12 border border-sky-100 shadow-xl overflow-hidden hover-wobble">
+            <div class="grid lg:grid-cols-12 gap-8 items-center">
+                
+                <!-- Left Content -->
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/80 border border-sky-200 text-sky-600 text-xs font-bold shadow-sm">
+                        FiveM Server Indonesia • Active Community
+                    </div>
+
+                    <div class="space-y-1">
+                        <h2 class="text-4xl lg:text-5xl font-black tracking-tight text-slate-900 font-['Orbitron']">
+                            WELCOME TO
+                        </h2>
+                        <h2 class="text-4xl lg:text-5xl font-black tracking-tight text-[#00a6ff] font-['Orbitron']">
+                            SOLARIA
+                        </h2>
+                        <h2 class="text-4xl lg:text-5xl font-black tracking-tight text-[#00a6ff] font-['Orbitron']">
+                            ROLEPLAY
+                        </h2>
+                    </div>
+
+                    <p class="text-slate-600 text-base font-medium italic">
+                        "Server ringan dengan fitur yang simple"
+                    </p>
+
+                    <div class="flex items-center gap-2 text-xs font-bold text-slate-400 tracking-wider">
+                        <span>POWERED BY</span>
+                        <img src="assets/img/primofivebg.png" alt="Primo Five" class="h-6 object-
